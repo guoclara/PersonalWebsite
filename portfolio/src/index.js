@@ -5,6 +5,8 @@ import './index.css';
 import $ from "jquery";
 import Anime from "@mollycule/react-anime";
 import emailjs from 'emailjs-com';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const fsab_descr = "Full Stack At Brown completes pro-bono projects for members of the Brown community to give them the ability to provide their users well designed and well built software. FSAB provide our community with workshops and other resources to get involved in the world of software engineering. Officially a frontend engineer, I focus on HTML, CSS, and JavaScript as well as UI design. Recently, I have worked on full stack projects using Flask in Python and SQL.";
 const stems_descr = "STEMS is a math and science tutoring program at Hope High School in Providence. Tutors are paired in a teacher's class and help students twice a week. STEMS aims to offer extra help to teachers, provide academic support, and act as mentors for students, and to support a greater self-efficacy for students in STEM fields. As part of the Tutor Development Team, I am responsible for recruiting tutors, community building and meeting planning, running social media, and gathering feedback.";
@@ -64,7 +66,7 @@ const proj_descr = [csa, boc, search, recommender, connect4, rackette];
 const proj_team = ['Trevor Ing, Casey Kim', 'Anna Zhao, Lucas Gelfond, Ethan Asis', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski'];
 const proj_time = ['Summer 2020', 'Ongoing', 'March 2020', 'Febuary 2020', 'December 2019', 'November 2019'];
 const proj_lang = [' HTML, CSS, JavaScript', 'Python (Jinja2, Flask), SQL, HTML, CSS', 'Scala', 'Java', 'ML', 'ML'];
-
+Aos.init({duration: 1500});
 class Activity extends React.Component{
   render() {
     const newCol = this.props.isActive ? 'white':'#353839';
@@ -104,6 +106,31 @@ function Course(props) {
   )
 }
 
+// function ScrollAnimation(props) {
+//   useEffect(() => {
+//     Aos.init({duration: 1500});
+
+//     document.body.addEventListener(
+//       "scroll",
+//       () => {
+//         console.log(document.getQuerySelector('scrollContainter'))
+//         document.getQuerySelector('scrollContainter').style.setProperty(
+//           "--scroll",
+//           window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+//         );
+//       },
+//       []
+//     );
+//   }, [])
+
+//   return(
+//     <div className = "scroll_containter">
+//       <div className="scrollAnim">
+//       </div>
+//     </div>
+//   )
+// }
+
 function Img(props) {
   return(
     <div className="image">
@@ -115,6 +142,7 @@ function Img(props) {
 class ExpPage extends React.Component {
   constructor(props) {
     super(props);
+    this.myRef = React.createRef();
     this.state = {
       active_component: null,
       size: this.props.width
@@ -186,14 +214,17 @@ class ExpPage extends React.Component {
     return <Img index={i} />
   }
 
+  // renderScrollAnimation() {
+  //   return <ScrollAnimation />
+  // }
+
   render() {
-    console.log(this.state)
     return (
       <div id="exp_pg">
         <div className="exp_banner">
           <div className="exp_title">
           <a id="exp"></a>
-            <h1>
+            <h1 data-aos='fade-up'>
               Experiences in: Full Stack Development, Community Engagment, Academics
             </h1>
           </div>
@@ -213,13 +244,14 @@ class ExpPage extends React.Component {
             <h5 id="activity_sub">scroll / click an activity more information</h5>
             {this.renderDescription(this.state.active_component)}
           </div>
-          <div className="activity_names">
+          <div className="activity_names" ref={this.myRef} id="scrollContainer">
             <div className="name_col" id="col1">
               {this.createCol1()}
             </div>
             <div className="name_col" id="col2">
               {this.createCol2()}
             </div>
+              {/* {this.renderScrollAnimation()} */}
           </div>
         </div>
         <div className="course_section">
@@ -231,6 +263,10 @@ class ExpPage extends React.Component {
           </div>
           <div className="course_catalog">
             {this.createCourseCatalog()}
+          </div>
+          <div className="nav_arrows" data-aos='fade-up'>
+            <a href="#home"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+            <a href="#proj"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -257,7 +293,7 @@ function Project(props) {
           <p>{proj_descr[props.index]}</p>
         </div>
       </div>
-      <hr></hr>
+      <hr data-aos="color"></hr>
     </div>
   );
 }
@@ -284,8 +320,14 @@ class ProjPage extends React.Component {
             Projects
           </h1>
         </div>
-        <div className = "projList">
-          {this.createProjList()}
+        <div className = 'projList_containter'>
+          <div className = "projList">
+            {this.createProjList()}
+          </div>
+          <div className="nav_arrows" id='arrows2' data-aos='fade-up'>
+            <a href="#exp"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+            <a href="#res"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+          </div>
         </div>
       </div>
     );
@@ -358,6 +400,7 @@ function About(){
   return (
     <div>
       <div id="landingpg">
+      <a id="home"></a>
         <div className = "nav">
           <a href = "#exp">EXPERIENCE</a>
           <a href = "#proj">PROJECTS</a>
