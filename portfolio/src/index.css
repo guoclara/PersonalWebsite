@@ -342,4 +342,7 @@ input[type=submit]:hover {
     flex-direction: column;
     justify-content: center;
   }
+  .about_pg{
+    display:block;
+  }
 }
