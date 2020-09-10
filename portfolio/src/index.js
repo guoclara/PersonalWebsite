@@ -420,10 +420,10 @@ function About(){
           </a>
         </div>
         <div className = "initials">
-          <img src= "initials.png"></img>
+          <img src={require('/Users/claraguo/Documents/GitHub/PersonalWebsite/portfolio/src/initials.png')} alt="Logo"></img>
         </div>
         <div className="about_pg">
-          <img src= "profile.png"></img>
+          <img src= {require('/Users/claraguo/Documents/GitHub/PersonalWebsite/portfolio/src/profile.png')} alt="Profile Photo"></img>
           <p>
             Hi! My name is Clara Guo. I'm a sophomore studying Applied Math-Computer Science at Brown Univeristy.
             I'm extremely passionate about understanding how to take data and information in the world and
