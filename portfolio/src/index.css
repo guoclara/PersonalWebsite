@@ -81,6 +81,7 @@ h5 {
 .about_pg img{
   height: 320px;
   margin-right: 25px;
+  margin-bottom: 15px;
 }
 
 .nav i {
@@ -153,12 +154,12 @@ h5 {
   justify-content: space-between;
   position: sticky;
   position: -webkit-sticky;
-  top: 15px;
+  top: 5vh;
 }
 
 #arrows2 {
   display:flex;
-  margin-top: 70vh;
+  margin-top: 65vh;
 }
 
 .projList_containter {
@@ -258,16 +259,35 @@ h5 {
   color: rgb(255, 225, 43)
 }
 
+.proj_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .proj_quickfact {
   width: 55%;
+  background-color: black;
+  text-align: left;
+  border: none;
+}
+
+.project_container {
+  width: 77vw;
+}
+
+.proj_quickfact:hover .collapsible{
+  color: rgb(238, 89, 20);
 }
 
 .proj_quickfact h2{
   font-size: 40px;
+  color: white;
   margin: 0;
 }
 .proj_quickfact h3{
   font-size: 30px;
+  color: white;
   margin:0;
 }
 
@@ -283,8 +303,9 @@ h5 {
   color:white;
   display:flex;
   flex-direction: row;
-  padding-bottom: 60px;
+  padding-bottom: 3vmax;
   margin: 0 10vw;
+  width: 80%;
 }
 
 .moreinfo_pg h1 {
@@ -416,7 +437,7 @@ input[type=submit]:hover {
 [data-aos="color"] {
   border-color:white;
   transition-property: border-color;
-  transition-delay: 4;
+  transition-delay: 3;
 }
 
 [data-aos="color"].aos-animate {

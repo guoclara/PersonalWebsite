@@ -65,7 +65,7 @@ const proj_descr = [csa, boc, search, recommender, connect4, rackette];
 
 const proj_team = ['Trevor Ing, Casey Kim', 'Anna Zhao, Lucas Gelfond, Ethan Asis', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski'];
 const proj_time = ['Summer 2020', 'Ongoing', 'March 2020', 'Febuary 2020', 'December 2019', 'November 2019'];
-const proj_lang = [' HTML, CSS, JavaScript', 'Python (Jinja2, Flask), SQL, HTML, CSS', 'Scala', 'Java', 'ML', 'ML'];
+const proj_lang = [' HTML, CSS, JavaScript', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'Scala', 'Java', 'ML', 'ML'];
 Aos.init({duration: 1500});
 class Activity extends React.Component{
   render() {
@@ -264,7 +264,7 @@ class ExpPage extends React.Component {
           <div className="course_catalog">
             {this.createCourseCatalog()}
           </div>
-          <div className="nav_arrows" data-aos='fade-up'>
+          <div className="nav_arrows" data-aos='fade-down' id = "arrows1">
             <a href="#home"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
             <a href="#proj"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
@@ -274,28 +274,45 @@ class ExpPage extends React.Component {
   }
 }
 
-function Project(props) {
-  return(
-    <div className="project">
-      <div>
-        <div className="proj_quickfact">
-          <h2>{proj_names[props.index]}</h2>
-          <h3><span style={{color: '#FFE12B'}}>&#8212; </span> {proj_org[props.index]}</h3>
-          <h5>
-            Languages: {proj_lang[props.index]} &#8729; 
-            Team: {proj_team[props.index]}
-            <br></br>
-            <br></br>
-            Date: {proj_time[props.index]}
-          </h5>
+class Project extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      collapsed: true,
+    }
+  } 
+
+  onClick() {
+    this.setState({collapsed: !this.state.collapsed});
+    console.log(this.state.collapsed)
+  }
+
+  render() {
+    return(
+      <div className="project">
+        <div className="project_container">
+          <button className="proj_quickfact" onClick={() => this.onClick()}>
+            <div className= "proj_name">
+              <h2>{proj_names[this.props.index]}</h2>
+              <h2 className = "collapsible">+</h2>
+            </div>
+            <h3><span style={{color: '#FFE12B'}}>&#8212; </span> {proj_org[this.props.index]}</h3>
+            <h5>
+              Languages: {proj_lang[this.props.index]} &#8729; 
+              Team: {proj_team[this.props.index]}
+              <br></br>
+              <br></br>
+              Date: {proj_time[this.props.index]}
+            </h5>
+          </button>
+          <div className = "proj_descr" style={ this.state.collapsed ? { display: 'none' } : { display: 'block' } }>
+            <p>{proj_descr[this.props.index]}</p>
+          </div>
         </div>
-        <div className = "proj_descr">
-          <p>{proj_descr[props.index]}</p>
-        </div>
+        <hr data-aos="color"></hr>
       </div>
-      <hr data-aos="color"></hr>
-    </div>
-  );
+    );
+  }
 }
 
 class ProjPage extends React.Component {
@@ -324,7 +341,7 @@ class ProjPage extends React.Component {
           <div className = "projList">
             {this.createProjList()}
           </div>
-          <div className="nav_arrows" id='arrows2' data-aos='fade-up'>
+          <div className="nav_arrows" id='arrows2' data-aos='fade-down'>
             <a href="#exp"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
             <a href="#res"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
