@@ -432,6 +432,29 @@ input[type=submit]:hover {
   .about_pg{
     display:block;
   }
+  h3{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  h1{
+    font-size: 55px;
+  }
+  .exp_page{
+    margin: 0;
+  }
+  .project{
+    margin: 0 5vw;
+  }
+  #resume {
+    font-size: 75px;
+  }
+  .rotate {
+    transform-origin: 0 0;
+    transform: translate(85px, 0) rotate(90deg);
+    width: 15%;
+  }
 }
 
 [data-aos="color"] {
