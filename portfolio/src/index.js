@@ -43,13 +43,16 @@ const apma1655= 'An integrated first course in mathematical statistics. Covered 
 const cs17 = "Teaches functional programming paradigm through the languages Racket and ML. All of the following fundamental computer science techniques are integrated into the course material: algorithms, data structures, analysis, problem solving, abstract reasoning, and collaboration. Concrete examples are drawn from different subareas of computer science: arbitrary-precision arithmetic, natural language processing, databases, and strategic games."
 const cs18 = "A continuation of CSCI 0170. Learned to program in Java while continuing to develop algorithmic and analytic skills. Emphasis is placed on object-oriented design, imperative programming, and the implementation and use of data structures. Examples are drawn from such areas as databases, strategy games, web programming, graphical user interfaces, route finding, and data compression. Lab work done with the assistance of TAs."
 const apma350 ="Comprehensive introduction to ordinary differential equations and their applications. Demonstrated how applied mathematicians use ordinary differential equations to solve practical applications, from understanding the underlying problem, creating a differential-equations model, solving the model using analytical, numerical, or qualitative methods, and interpreting the findings in terms of the original problem. We will also learn about the underlying rigorous theoretical foundations of differential equations."
+const dl = "Deep leaning, plus the specialized techniques that it has inspired (e.g. convolutional features and word embeddings) have lead to rapid improvements in many applications such as computer vision, machine translation, and computer Go. This course intends to give students a practical understanding of deep learning as applied in these and other areas. It also teaches the Tensorflow programming language for the expression of deep leaning algorithms. (The primary API for Tensorflow is from Python.)"
+const cs33 = "High-level computer architecture and systems programming. The course covers the organization of computer systems (in terms of storage units, caches, processors, and I/O controllers) and teaches students assembly-language programming and C-language programming. Extensive programming exercises introduce students to systems-level programming on Unix systems, as well as to multi-threaded programming with POSIX threads."
+const apma1210 = "An introduction to the basic mathematical ideas and computational methods of optimizing allocation of effort or resources, with or without constraints. Linear programming, network models, dynamic programming, and integer programming."
 const course_names = [
   'Applied Partial Differential Equations I', 'Statistical Inference I', 
   'Computer Science: An Integrated Introduction (CS0170)', 'Computer Science: An Integrated Introduction (CS0180)', 
-  'Applied Ordinary Differential Equations'
+  'Applied Ordinary Differential Equations','Deep Learning', 'Introduction to Computer Systems', 'Operations Research: Deterministic Models'
 ];
-const course_grades = Array(5).fill('A');
-const course_descr = [apma360, apma1655, cs17, cs18, apma350];
+const course_grades = ["A", "A", "A", "A", "A", "current course", "current course", "current course"];
+const course_descr = [apma360, apma1655, cs17, cs18, apma350, dl, cs33, apma1210];
 
 const images = [];
 
@@ -207,6 +210,8 @@ class ExpPage extends React.Component {
     for (var i = 1; i < course_names.length; i++){
       courses.push(this.renderCourse(i))
     }
+    console.log("ehllo")
+    console.log(course_names.length)
     return courses;
   }
 
