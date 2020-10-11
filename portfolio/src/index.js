@@ -8,7 +8,7 @@ import emailjs from 'emailjs-com';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-const fsab_descr = "Full Stack At Brown completes pro-bono projects for members of the Brown community to give them the ability to provide their users well designed and well built software. FSAB provide our community with workshops and other resources to get involved in the world of software engineering. Officially a frontend engineer, I focus on HTML, CSS, and JavaScript as well as UI design. Recently, I have worked on full stack projects using Flask in Python and SQL.";
+const fsab_descr = "Full Stack At Brown completes pro-bono projects for members of the Brown community to give them the ability to provide their users well designed and well built software. FSAB provides our community with workshops and other resources to get involved in the world of software engineering. Officially a frontend engineer, I focus on HTML, CSS, and JavaScript as well as UI design. Recently, I have worked on full stack projects using Flask in Python and SQL.";
 const stems_descr = "STEMS is a math and science tutoring program at Hope High School in Providence. Tutors are paired in a teacher's class and help students twice a week. STEMS aims to offer extra help to teachers, provide academic support, and act as mentors for students, and to support a greater self-efficacy for students in STEM fields. As part of the Tutor Development Team, I am responsible for recruiting tutors, community building and meeting planning, running social media, and gathering feedback.";
 const pride_descr = "San Diego Pride is a nonprofit that aims to foster pride, equality, and respect for the LGBT community. In addition to holding an annual Pride Parade and Festival, SD Pride is one of the only pride organizations that provides year-round education and advocacy programs. As the Programs Intern, I created, edited, and reviewed content and documents for live programming, organization coalitions, and volunteer resources. I helped manage speakers at livestream events as well as fundraise and moderate social media. With our streamed events, we were able to broaden our reach across the globe, including to those not out and those in countries where there is heavy stigma or homosexuality is criminalized.";
 const pride_nums = "Raised $56,454 for a $50,000 goal. Pride week streaming live segments reached 333,414 people, and 265,624 watched Pride Live (the stream in place of the parade and festival). The earned media hit 10.6 million people from the week.";
@@ -62,13 +62,15 @@ const search = "Search engine comprised of an Indexer and Querier that processes
 const recommender = "Builds a decision tree from a provided dataset of objects in order to predict the value of an attribute from a new object not within the dataset (e.g. if a new applicant will be rejected or accepted for a position. New Object = Applicant. Hirability = Attribute). The user can select any attribute to look up a recommendation for."
 const connect4 = "Two player game of connect four played in terminal with customizable board dimensions. Option to choose the type of players playing: human player or AI player. The human player is a user interface that asks a real human which move to make. The AI player selectes moves based on a game-tree search that looks at all possible game states n steps ahead, where n can be changed. It is assumed all players play with their best interest in mind."
 const rackette = "Interpreter that takes in a program written in Racket as a string and processes it in ML to produce results. It handles definitions, conditionals, logic, let expressions, procedure-application expressions, anonymous functions, and nesting. The interpreter is split into components that parse, evaluate, and converts the result back into a string."
-const proj_names = ['Brown Chinese Students Association Website', 'Brown Outing Club Weighted Lottery System', 'Search', 'Recommender', 'Connect Four', 'Rackette'];
-const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'CSCI0180', 'CSCI0180', 'CSCI0170', 'CSCI0170'];
-const proj_descr = [csa, boc, search, recommender, connect4, rackette];
+const hack = "3D version of the 2D website hosting the Hack at Home Hackathon run from Oct 9-12, 2020. I coded part of the user interaction. This includes highlighting clickable objects on hover, determining camera positioning for zooming, and making objects function as hyperlinks or urls for iframes. The website is meant as guide for participants to reference throughout the event and details the organization of the hackathon and its features."
+const proj_names = ['Hack at Home 3D Website', 'Brown Chinese Students Association Website', 'Brown Outing Club Weighted Lottery System', 'Search', 'Recommender', 'Connect Four', 'Rackette'];
+const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Full Stack at Brown', 'CSCI0180', 'CSCI0180', 'CSCI0170', 'CSCI0170'];
+const proj_descr = [hack, csa, boc, search, recommender, connect4, rackette];
+const proj_link = ['https://hackathome.org/home.html', 'https://github.com/FullStackAtBrownTeam/CSA-Website', boc, search, recommender, connect4, rackette];
 
-const proj_team = ['Trevor Ing, Casey Kim', 'Anna Zhao, Lucas Gelfond, Ethan Asis', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski'];
+const proj_team = ['Johnny Roy, Trevor Lowe, Yilan Sun', 'Trevor Ing, Casey Kim', 'Anna Zhao, Lucas Gelfond, Ethan Asis', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski'];
 const proj_time = ['Summer 2020', 'Ongoing', 'March 2020', 'Febuary 2020', 'December 2019', 'November 2019'];
-const proj_lang = [' HTML, CSS, JavaScript', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'Scala', 'Java', 'ML', 'ML'];
+const proj_lang = ['HTML, CSS, JavaScript (ThreeJS)', 'HTML, CSS, JavaScript', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'Scala', 'Java', 'ML', 'ML'];
 Aos.init({duration: 1500});
 class Activity extends React.Component{
   render() {
@@ -312,6 +314,7 @@ class Project extends React.Component {
           </button>
           <div className = "proj_descr" style={ this.state.collapsed ? { display: 'none' } : { display: 'block' } }>
             <p>{proj_descr[this.props.index]}</p>
+            <a href={proj_link[this.props.index]}>{proj_link[this.props.index]}</a>
           </div>
         </div>
         <hr data-aos="color"></hr>
