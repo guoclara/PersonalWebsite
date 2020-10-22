@@ -63,14 +63,17 @@ const recommender = "Builds a decision tree from a provided dataset of objects i
 const connect4 = "Two player game of connect four played in terminal with customizable board dimensions. Option to choose the type of players playing: human player or AI player. The human player is a user interface that asks a real human which move to make. The AI player selects moves based on a game-tree search that looks at all possible game states n steps ahead, where n can be changed. It is assumed all players play with their best interest in mind."
 const rackette = "Interpreter that takes in a program written in Racket as a string and processes it in ML to produce results. It handles definitions, conditionals, logic, let expressions, procedure-application expressions, anonymous functions, and nesting. The interpreter is split into components that parse, evaluate, and converts the result back into a string."
 const hack = "3D version of the 2D website hosting the Hack at Home Hackathon run from Oct 9-12, 2020. I coded a large part of the user interaction. This includes highlighting clickable objects on hover, determining camera positioning for zooming, and making objects function as hyperlinks or urls for iframes. The website is meant as guide for participants to reference throughout the event and details the organization of the hackathon and its features. Designers created the 3D models used for the site."
-const proj_names = ['Hack at Home 3D Website', 'Brown Chinese Students Association Website', 'Brown Outing Club Weighted Lottery System', 'Search', 'Recommender', 'Connect Four', 'Rackette'];
-const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Full Stack at Brown', 'CSCI0180', 'CSCI0180', 'CSCI0170', 'CSCI0170'];
-const proj_descr = [hack, csa, boc, search, recommender, connect4, rackette];
-const proj_link = ['https://hackathome.org/home.html', 'https://github.com/FullStackAtBrownTeam/CSA-Website', boc, search, recommender, connect4, rackette];
+const shell = "Implementation of shell in C that displays a prompt and waits until the user types in a line of input. It then parses the input and take the appropriate action. For example, some input is passed on to built-in shell commands, while other inputs specify file redirections and external programs to be executed by the shell."
+const cnn = "Implementation of a convolutional neural network to classify cats and dogs from images in the CIFAR10 dataset with an accuracy of 0.74894744 using both the Tensorflow API and my own implementation of conv2d that manually calculates the padding and convolution calculations given inputs, strides, filters, and padding type."
 
-const proj_team = ['Johnny Roy, Trevor Lowe, Yilan Sun', 'Trevor Ing, Casey Kim', 'Anna Zhao, Lucas Gelfond, Ethan Asis', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski'];
-const proj_time = ['Summer 2020', 'Ongoing', 'March 2020', 'Febuary 2020', 'December 2019', 'November 2019'];
-const proj_lang = ['HTML, CSS, JavaScript (ThreeJS)', 'HTML, CSS, JavaScript', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'Scala', 'Java', 'ML', 'ML'];
+const proj_names = ['Hack at Home 3D Website', 'Brown Chinese Students Association Website', 'Brown Outing Club Weighted Lottery System', 'Search', 'Recommender', 'Connect Four', 'Rackette', 'Shell'];
+const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Full Stack at Brown', 'CSCI0180', 'CSCI0180', 'CSCI0170', 'CSCI0170', 'Introduction to Computer Systems', 'Deep Learning'];
+const proj_descr = [hack, csa, boc, search, recommender, connect4, rackette, shell, cnn];
+const proj_link = ['https://hackathome.org/home.html', 'https://github.com/FullStackAtBrownTeam/CSA-Website', boc, search, recommender, connect4, rackette, shell, cnn];
+
+const proj_team = ['Johnny Roy, Trevor Lowe, Yilan Sun', 'Trevor Ing, Casey Kim', 'Anna Zhao, Lucas Gelfond, Ethan Asis', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski', 'n/a', 'n/a'];
+const proj_time = ['Summer 2020', 'Ongoing', 'March 2020', 'Febuary 2020', 'December 2019', 'November 2019', 'October 2020', 'September 2020'];
+const proj_lang = ['HTML, CSS, JavaScript (ThreeJS)', 'HTML, CSS, JavaScript', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'Scala', 'Java', 'ML', 'ML', 'C', 'Python'];
 Aos.init({duration: 1500});
 class Activity extends React.Component{
   render() {
