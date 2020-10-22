@@ -66,14 +66,14 @@ const hack = "3D version of the 2D website hosting the Hack at Home Hackathon ru
 const shell = "Implementation of shell in C that displays a prompt and waits until the user types in a line of input. It then parses the input and take the appropriate action. For example, some input is passed on to built-in shell commands, while other inputs specify file redirections and external programs to be executed by the shell."
 const cnn = "Implementation of a convolutional neural network to classify cats and dogs from images in the CIFAR10 dataset with an accuracy of 0.74894744 using both the Tensorflow API and my own implementation of conv2d that manually calculates the padding and convolution calculations given inputs, strides, filters, and padding type."
 
-const proj_names = ['Hack at Home 3D Website', 'Brown Chinese Students Association Website', 'Brown Outing Club Weighted Lottery System', 'Search', 'Recommender', 'Connect Four', 'Rackette', 'Shell'];
-const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Full Stack at Brown', 'CSCI0180', 'CSCI0180', 'CSCI0170', 'CSCI0170', 'Introduction to Computer Systems', 'Deep Learning'];
-const proj_descr = [hack, csa, boc, search, recommender, connect4, rackette, shell, cnn];
-const proj_link = ['https://hackathome.org/home.html', 'https://github.com/FullStackAtBrownTeam/CSA-Website', boc, search, recommender, connect4, rackette, shell, cnn];
+const proj_names = ['Hack at Home 3D Website', 'Brown Outing Club Weighted Lottery System', 'Brown Chinese Students Association Website', 'Shell', 'Convolutional Neural Network', 'Search', 'Recommender', 'Connect Four', 'Rackette'];
+const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Full Stack at Brown', 'Introduction to Computer Systems', 'Deep Learning', 'CSCI0180', 'CSCI0180', 'CSCI0170', 'CSCI0170'];
+const proj_descr = [hack, boc, csa, shell, cnn, search, recommender, connect4, rackette];
+const proj_link = ['https://hackathome.org/home.html', '', 'https://github.com/FullStackAtBrownTeam/CSA-Website', '', '', '', '', '', ''];
 
-const proj_team = ['Johnny Roy, Trevor Lowe, Yilan Sun', 'Trevor Ing, Casey Kim', 'Anna Zhao, Lucas Gelfond, Ethan Asis', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski', 'n/a', 'n/a'];
-const proj_time = ['Summer 2020', 'Ongoing', 'March 2020', 'Febuary 2020', 'December 2019', 'November 2019', 'October 2020', 'September 2020'];
-const proj_lang = ['HTML, CSS, JavaScript (ThreeJS)', 'HTML, CSS, JavaScript', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'Scala', 'Java', 'ML', 'ML', 'C', 'Python'];
+const proj_team = ['Johnny Roy, Trevor Lowe, Yilan Sun','Anna Zhao, Lucas Gelfond, Ethan Asis', 'Trevor Ing, Casey Kim', 'n/a', 'n/a', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski'];
+const proj_time = ['Summer 2020', 'Ongoing', 'March 2020','October 2020', 'September 2020', 'Febuary 2020', 'December 2019', 'November 2019', 'October 2019'];
+const proj_lang = ['HTML, CSS, JavaScript (ThreeJS)', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'HTML, CSS, JavaScript', 'C', 'Python', 'Scala', 'Java', 'ML', 'ML'];
 Aos.init({duration: 1500});
 class Activity extends React.Component{
   render() {
@@ -275,8 +275,8 @@ class ExpPage extends React.Component {
             {this.createCourseCatalog()}
           </div>
           <div className="nav_arrows" data-aos='fade-down' id = "arrows1">
-            <a href="#home"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-            <a href="#proj"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="#home"><i className="fa fa-chevron-up" aria-hidden="true"></i></a>
+            <a href="#proj"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -353,8 +353,8 @@ class ProjPage extends React.Component {
             {this.createProjList()}
           </div>
           <div className="nav_arrows" id='arrows2' data-aos='fade-down'>
-            <a href="#exp"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-            <a href="#res"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="#exp"><i className="fa fa-chevron-up" aria-hidden="true"></i></a>
+            <a href="#res"><i className="fa fa-chevron-down" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -435,16 +435,16 @@ function About(){
           <a href = "#res">CONTACT/RESUME</a>
               
           <a href="#res" target="_blank">
-            <i class="fa fa-envelope" aria-hidden="true" ></i>
+            <i className="fa fa-envelope" aria-hidden="true" ></i>
           </a>
           <a href="https://www.linkedin.com/in/claraguo" target="_blank">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <i className="fa fa-linkedin" aria-hidden="true"></i>
           </a>
           <a href="https://www.facebook.com/profile.php?id=100013451281570" target="_blank">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i className="fa fa-facebook-square" aria-hidden="true"></i>
           </a>
           <a href="https://github.com/guoclara" target="_blank">
-            <i class="fa fa-github" aria-hidden="true"></i>
+            <i className="fa fa-github" aria-hidden="true"></i>
           </a>
         </div>
         <div className = "initials">
