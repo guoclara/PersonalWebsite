@@ -14,20 +14,21 @@ const pride_descr = "San Diego Pride is a nonprofit that aims to foster pride, e
 const pride_nums = "Raised $56,454 for a $50,000 goal. Pride week streaming live segments reached 333,414 people, and 265,624 watched Pride Live (the stream in place of the parade and festival). The earned media hit 10.6 million people from the week.";
 const aclu_descr = "ACLU's Brown University Chapter seeks to raise awareness around civil liberties issues. Each semester, new working groups dedicated to various civil issues are created. I was a part of the Immigrants' Rights Working Group and we sought to clarify the financial aid and college application process for undocumented/DACA students. I designed a page long infographic representing the culmination of research and interviews of relevant university staff. I also created the new branding for all Brown ACLU social media and am currently designing their website layout."
 const ljpc_descr = "La Jolla Pharmaceutical Company develops and commercializes innovative therapies that improve outcomes in patients suffering from life-threatening diseases. In December 2017, GIAPREZA™ (angiotensin II) was approved by the U.S. Food and Drug Administration (FDA) to treat adults with septic or other distributive shock. Using R Studio and Excel, I extractred, organized, merged, and analyzed pharmacokinetic/pharmacodynamic data from clinical trials for toxicology reports. I charted macrophage levels in the blood at different dosages and times to help determine efficacy of drugs in development. I then presented and explained the graphs in internal meetings";
-const bwcs_descr = "Brown Women's Club Soccer plays competitively against schools in the New England area.";
+const bwcs_descr = "Captain of Brown Women's Club Soccer. Coordinate with club and league managers; plan games, practices, and social events; manage budgeting and transportation. We play competitively against schools in the New England area.";
 const agss_descr = "All Girls STEM Society is a student run nonprofit that aims to empower young girls to pursue STEM through various free events (e.g. outreach, math tournaments) and workshops. In libraries across San Diego County, AGSS runs monthly workshops that involve speakers, original lectures, and hands-on activities. I created and taught circuitry and cellular biology workshops in addition to reviewing the development of other workshops and individually interacting and supporting participants.";
 const agss_nums = "Roughly 1000 participants across all events annually, with the All Girls Math Tournament garnering 100+ and STEAM Maker Festivals at the County Fair garnering around 200. In 2017-2018, girls from over 20 new schools participated, with half the workshops ran being brand-new curriculum.";
 const discovery_descr = "Software developer intern for Food Network Kitchen Services team at Discovery Inc. Completed tickets along with team in Agile framework. Spearheaded an Operational Excellence project to create a prototype automation workflow that created/updated Jira change management tickets tracking deploys. Helped migrate a legacy API to a new stack. Modified and created new endpoints that are now in production."
-const activity_names = ['Discovery Inc', 'FSAB', 'STEMS', 'SD PRIDE', 'ACLU', 'LJPC', 'BWCS', 'AGSS'];
+const activity_names = ['Discovery Inc', 'FSAB', 'BWCS', 'STEMS', 'SD PRIDE', 'ACLU', 'LJPC', 'AGSS'];
 const activity_sub = [
-  'Software Developer Intern','Full Stack At Brown', 'Swearer Tutoring Enrichment in Math and Science',
+  'Software Developer Intern','Full Stack At Brown', "Brown Women's Club Soccer",
+  'Swearer Tutoring Enrichment in Math and Science',
   'San Diego Pride', 'American Civil Liberties Union - Brown Chapter',
-  'La Jolla Pharamceutical Company', "Brown Women's Club Soccer",
+  'La Jolla Pharamceutical Company', 
   'All Girls STEM Society'
 ];
 const activity_dates = [
-  'June 2021- Aug 2021', 'Jan 2020 - Present', 'Sep 2019 - Present', 'May 2020 - Present',
-  'Sep 2019 - Present', 'June 2018 - Aug 2018', 'Sep 2019 - Present',
+  'June 2021- Aug 2021', 'Jan 2020 - Present', 'Sep 2019 - Present', 'Sep 2019 - Present',
+  'May 2020 - Aug 2020', 'Sep 2019 - Present', 'June 2018 - Aug 2018', 
   'Mar 2016 - Aug 2019'
 ];
 const activity_descr = [
