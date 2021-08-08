@@ -17,26 +17,27 @@ const ljpc_descr = "La Jolla Pharmaceutical Company develops and commercializes 
 const bwcs_descr = "Brown Women's Club Soccer plays competitively against schools in the New England area.";
 const agss_descr = "All Girls STEM Society is a student run nonprofit that aims to empower young girls to pursue STEM through various free events (e.g. outreach, math tournaments) and workshops. In libraries across San Diego County, AGSS runs monthly workshops that involve speakers, original lectures, and hands-on activities. I created and taught circuitry and cellular biology workshops in addition to reviewing the development of other workshops and individually interacting and supporting participants.";
 const agss_nums = "Roughly 1000 participants across all events annually, with the All Girls Math Tournament garnering 100+ and STEAM Maker Festivals at the County Fair garnering around 200. In 2017-2018, girls from over 20 new schools participated, with half the workshops ran being brand-new curriculum.";
-const activity_names = ['FSAB', 'STEMS', 'SD PRIDE', 'ACLU', 'LJPC', 'BWCS', 'AGSS'];
+const discovery_descr = "Software developer intern for Food Network Kitchen Services team at Discovery Inc. Completed tickets along with team in Agile framework. Spearheaded an Operational Excellence project to create a prototype automation workflow that created/updated Jira change management tickets tracking deploys. Helped migrate a legacy API to a new stack. Modified and created new endpoints that are now in production."
+const activity_names = ['Discovery Inc', 'FSAB', 'STEMS', 'SD PRIDE', 'ACLU', 'LJPC', 'BWCS', 'AGSS'];
 const activity_sub = [
-  'Full Stack At Brown', 'Swearer Tutoring Enrichment in Math and Science',
+  'Software Developer Intern','Full Stack At Brown', 'Swearer Tutoring Enrichment in Math and Science',
   'San Diego Pride', 'American Civil Liberties Union - Brown Chapter',
   'La Jolla Pharamceutical Company', "Brown Women's Club Soccer",
   'All Girls STEM Society'
 ];
 const activity_dates = [
-  'Jan 2020 - Present', 'Sep 2019 - Present', 'May 2020 - Present',
+  'June 2021- Aug 2021', 'Jan 2020 - Present', 'Sep 2019 - Present', 'May 2020 - Present',
   'Sep 2019 - Present', 'June 2018 - Aug 2018', 'Sep 2019 - Present',
   'Mar 2016 - Aug 2019'
 ];
 const activity_descr = [
-  fsab_descr, stems_descr, pride_descr,
+  discovery_descr, fsab_descr, stems_descr, pride_descr,
   aclu_descr, ljpc_descr, bwcs_descr,
   agss_descr
 ];
-const activity_nums = [ '', '', pride_nums, '', '', '', agss_nums];
-const activity_links = ['', '', 'https://sdpride.org/' ,'https://www.facebook.com/brownaclu/posts/1418416088354923', '', 'https://www.allgirlsstemsociety.org/2018---2019-events.html', ''];
-const activity_linksdescr = ['', '', 'San Diego Pride' ,'Brown ACLU Infographic', '', '', 'Workshops from 2019'];
+const activity_nums = [ '', '', '', pride_nums, '', '', '', agss_nums];
+const activity_links = ['', '', '', 'https://sdpride.org/' ,'https://www.facebook.com/brownaclu/posts/1418416088354923', '', 'https://www.allgirlsstemsociety.org/2018---2019-events.html', ''];
+const activity_linksdescr = ['', '', '', 'San Diego Pride' ,'Brown ACLU Infographic', '', '', 'Workshops from 2019'];
 
 const apma360 = "Described problems quantitatively as PDEs, discovered how seemingly unrelated contexts can result in similar equations; and developed methods for solution using analytical, numerical or qualitative methods. Contexts include first order equations; the second order wave equation and problems involving diffusion processes; steady state balances for systems in two or three dimensions; together with insights from theory."
 const apma1655= 'An integrated first course in mathematical statistics. Covered probability and statistics, integrated with its probabilistic foundation. Specific topics include probability spaces, discrete and continuous random variables, methods for parameter estimation, confidence intervals, and hypothesis testing.'
@@ -45,14 +46,17 @@ const cs18 = "A continuation of CSCI 0170. Learned to program in Java while cont
 const apma350 ="Comprehensive introduction to ordinary differential equations and their applications. Demonstrated how applied mathematicians use ordinary differential equations to solve practical applications, from understanding the underlying problem, creating a differential-equations model, solving the model using analytical, numerical, or qualitative methods, and interpreting the findings in terms of the original problem. We will also learn about the underlying rigorous theoretical foundations of differential equations."
 const dl = "Deep learning, plus the specialized techniques that it has inspired (e.g. convolutional features and word embeddings) have lead to rapid improvements in many applications such as computer vision, machine translation, and computer Go. Coursework includes creating different neural networks (e.g. convolutional, recurrent, n-gram) for image and natural language processing using Numpy and Tensorflow (The primary API for Tensorflow is from Python)."
 const cs33 = "High-level computer architecture and systems programming. The course covers the organization of computer systems (in terms of storage units, caches, processors, and I/O controllers) and teaches students assembly-language programming and C-language programming. Extensive programming exercises introduce students to systems-level programming on Unix systems, as well as to multi-threaded programming with POSIX threads."
+const apma1200 = "Basic probabilistic problems and methods in operations research and management science. Methods of problem formulation and solution. Markov chains, birth-death processes, stochastic service and queueing systems, the theory of sequential decisions under uncertainty, dynamic programming."
 const apma1210 = "An introduction to the basic mathematical ideas and computational methods of optimizing allocation of effort or resources, with or without constraints. Linear programming, network models, dynamic programming, and integer programming."
+const cs32 = "Techniques for designing, building, and maintaining large, scalable, and reusable systems using Java and Javascript. Focus on software testing, relational databases, concurrency techniques such as threads, and software engineering tools like git, profilers, and debuggers. A major component of the course was a group software project of your own design."
+const cv = "This course treats vision as inference from noisy and uncertain data and emphasizes probabilistic and statistical approaches. Topics may include perception of 3D scene structure from stereo, motion, and shading; segmentation and grouping; texture analysis; learning, object recognition; tracking and motion estimation."
 const course_names = [
-  'Applied Partial Differential Equations I', 'Statistical Inference I', 
-  'Computer Science: An Integrated Introduction (CS0170)', 'Computer Science: An Integrated Introduction (CS0180)', 
-  'Applied Ordinary Differential Equations','Deep Learning', 'Introduction to Computer Systems', 'Operations Research: Deterministic Models'
+  'Introduction To Software Engineering', 'Applied Partial Differential Equations I', 'Applied Ordinary Differential Equations','Statistical Inference I', 
+  'Deep Learning', 'Computer Vision', 'Introduction to Computer Systems', 'Operations Research: Deterministic Models', 'Operations Research: Probabilistic Models', 
+  'Computer Science: An Integrated Introduction (CS0170)', 'Computer Science: An Integrated Introduction (CS0180)'
 ];
-const course_grades = ["A", "A", "A", "A", "A", "current course", "current course", "current course"];
-const course_descr = [apma360, apma1655, cs17, cs18, apma350, dl, cs33, apma1210];
+const course_grades = ["A","A", "A", "A", "A", "A", "A", "A", "A", "A", "A"];
+const course_descr = [cs32, apma360, apma350, apma1655, dl, cv, cs33, apma1210, apma1200, cs17, cs18];
 
 const images = [];
 
@@ -65,17 +69,18 @@ const rackette = "Interpreter that takes in a program written in Racket as a str
 const hack = "3D version of the 2D website hosting the Hack at Home Hackathon run from Oct 9-12, 2020. I coded a large part of the user interaction. This includes highlighting clickable objects on hover, determining camera positioning for zooming, and making objects function as hyperlinks or urls for iframes. The website is meant as guide for participants to reference throughout the event and details the organization of the hackathon and its features. Designers created the 3D models used for the site."
 const shell = "Implementation of shell in C that displays a prompt and waits until the user types in a line of input. It then parses the input and take the appropriate action. For example, some input is passed on to built-in shell commands, while other inputs specify file redirections and external programs to be executed by the shell."
 const cnn = "Implementation of a convolutional neural network to classify cats and dogs from images in the CIFAR10 dataset with an accuracy of 0.74894744 using both the Tensorflow API and my own implementation of conv2d that manually calculates the padding and convolution calculations given inputs, strides, filters, and padding type."
+const equilibria = "Full stack web application for users to fairly delegate tasks to other users using linear programming. Users can create events that have a list of tasks and invite other users to input their willingness on a scale of 0-10 to do each task. Once invited to an event, the event will show up on each user's page. Once all users submit their willingness, the creator can click a button to run task assignment and view the results."
 
-const proj_names = ['Hack at Home 3D Website', 'Brown Outing Club Weighted Lottery System', 'Brown Chinese Students Association Website', 'Shell', 'Convolutional Neural Network', 'Search', 'Recommender', 'Connect Four', 'Rackette'];
-const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Full Stack at Brown', 'Introduction to Computer Systems', 'Deep Learning', 'CSCI0180', 'CSCI0180', 'CSCI0170', 'CSCI0170'];
-const proj_descr = [hack, boc, csa, shell, cnn, search, recommender, connect4, rackette];
-const proj_link = ['https://hackathome.org/home.html', '', 'https://github.com/FullStackAtBrownTeam/CSA-Website', '', '', '', '', '', ''];
-const proj_link2 = ['https://blog.cs.brown.edu/2020/11/04/full-stack-browns-first-hackathon-datathon-and-ctf-hackhome/', '', '', '', '', '', '', '', ''];
-const proj_link2_name = ['Brown CS Dept blog post with more info', '', '', '', '', '', '', '', ''];
+const proj_names = ['Hack at Home 3D Website', 'Brown Outing Club Weighted Lottery System', 'Equilibria', 'Brown Chinese Students Association Website', 'Shell', 'Convolutional Neural Network', 'Search', 'Recommender', 'Connect Four', 'Rackette'];
+const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Intro To Software Engineering, Final Project', 'Full Stack at Brown', 'Introduction to Computer Systems', 'Deep Learning', 'CSCI0180', 'CSCI0180', 'CSCI0170', 'CSCI0170'];
+const proj_descr = [hack, boc, equilibria, csa, shell, cnn, search, recommender, connect4, rackette];
+const proj_link = ['https://hackathome.org/home.html', 'https://boc.app.fullstackatbrown.com/','', 'https://github.com/FullStackAtBrownTeam/CSA-Website', '', '', '', '', '', ''];
+const proj_link2 = ['https://blog.cs.brown.edu/2020/11/04/full-stack-browns-first-hackathon-datathon-and-ctf-hackhome/', '', '', '', '', '', '', '', '', ''];
+const proj_link2_name = ['Brown CS Dept blog post with more info', '', '', '', '', '', '', '', '', ''];
 
-const proj_team = ['Johnny Roy, Trevor Lowe, Yilan Sun','Anna Zhao, Lucas Gelfond, Ethan Asis', 'Trevor Ing, Casey Kim', 'n/a', 'n/a', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski'];
-const proj_time = ['Summer 2020', 'Ongoing', 'March 2020','October 2020', 'September 2020', 'Febuary 2020', 'December 2019', 'November 2019', 'October 2019'];
-const proj_lang = ['HTML, CSS, JavaScript (ThreeJS)', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'HTML, CSS, JavaScript', 'C', 'Python', 'Scala', 'Java', 'ML', 'ML'];
+const proj_team = ['Johnny Roy, Trevor Lowe, Yilan Sun','Anna Zhao, Lucas Gelfond, Ethan Asis', 'Johnny Ren, Anna Zhao, Aaron Wang', 'Trevor Ing, Casey Kim', 'n/a', 'n/a', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski'];
+const proj_time = ['Summer 2020', '2020-2021', 'March 2020','October 2020', 'September 2020', 'Febuary 2020', 'December 2019', 'November 2019', 'October 2019'];
+const proj_lang = ['HTML, CSS, JavaScript (ThreeJS)', 'Java, Javascript (ReactJS)', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'HTML, CSS, JavaScript', 'C', 'Python', 'Scala', 'Java', 'ML', 'ML'];
 Aos.init({duration: 1500});
 class Activity extends React.Component{
   render() {
@@ -164,6 +169,7 @@ class ExpPage extends React.Component {
   }
 
   renderActivity(i) {
+    // console.log(activity_names[i])
     let col_num;
     if (this.state.size < 950) {
       col_num = "activity_col1";
@@ -214,11 +220,10 @@ class ExpPage extends React.Component {
 
   createCourseCatalog(){
     let courses = [];
-    for (var i = 1; i < course_names.length; i++){
+    for (var i = 0; i < course_names.length; i++){
       courses.push(this.renderCourse(i))
+      console.log(course_names[i])
     }
-    console.log("ehllo")
-    console.log(course_names.length)
     return courses;
   }
 
