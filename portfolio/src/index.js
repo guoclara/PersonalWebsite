@@ -463,7 +463,7 @@ function About(){
         <div className="about_pg">
           <img src= {require('/Users/claraguo/Documents/GitHub/PersonalWebsite/portfolio/src/profile.png')} alt="Profile Photo"></img>
           <p>
-            Hi! My name is Clara Guo. I'm a sophomore studying Applied Math-Computer Science at Brown Univeristy.
+            Hi! My name is Clara Guo. I'm a senior studying Applied Math-Computer Science at Brown Univeristy.
             I'm extremely passionate about understanding how to take data and information in the world and
             making it easier for everyone to understand, especially when it comes to pushing for social change.
             <br></br>
