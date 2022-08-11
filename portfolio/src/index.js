@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Profiler } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import Anime from "src/anime.min.js";
@@ -32,8 +32,9 @@ const activity_dates = [
   'Mar 2016 - Aug 2019'
 ];
 const activity_descr = [
-  discovery_descr, fsab_descr, stems_descr, pride_descr,
-  aclu_descr, ljpc_descr, bwcs_descr,
+  discovery_descr, fsab_descr, bwcs_descr, stems_descr, 
+  pride_descr,
+  aclu_descr, ljpc_descr, 
   agss_descr
 ];
 const activity_nums = [ '', '', '', pride_nums, '', '', '', agss_nums];
@@ -463,24 +464,14 @@ function About(){
         <div className="about_pg">
           <img src= {require('/Users/claraguo/PersonalWebsite/portfolio/src/profile.png')} alt="Profile Photo"></img>
           <p>
-            Hi! My name is Clara Guo. I'm a senior studying Applied Math-Computer Science at Brown Univeristy.
-            I'm extremely passionate about understanding how to take data and information in the world and
-            making it easier for everyone to understand, especially when it comes to pushing for social change.
+            Hi! My name is Clara Guo. I'm a senior studying Applied Math-Computer Science at Brown Univeristy and am graduating in May 2023. I'm looking for an opportunity to start my professional career as a software engineer.
             <br></br>
             <br></br>
-            Trying to figure out what I wanted to do with my life, I came across this article describing how math professors testified on the likelihood 
-            that the majority party gerrymandered their voting districts and how they were able to provide evidence arguing that it 
-            was nearly certain they had. I want to take advantage of the potential STEM has to transform society and communities.
+            I am passionate about creating technology that touches a wide audience and gives make their lives better in some way, whether that's through providing entertainment through streaming or through helping local communities with their tech needs.
             <br></br>
-            <br></br>
-            I'm driven by this desire and it translates to what I do and how I do it. I'm someone who thinks
-            on their feet and isn't afraid of failing. I'm proactive, self-motivated, creative and collaborative. I'm able to 
-            practice this in my academic career as well as my hobbies, some of which include playing soccer, cooking, and whittling. 
-            I always want to learn more, whether that means teaching myself how to carve block prints or learning html to make this website.
-            <br></br>
-            <br></br>
+            <br></br> 
             Take a look at the rest of the website, and please contact me if you have any questions!
-            My socials, email, resume and github can be found on the bar on the right of the home page</p>
+            My socials, email, resume and github can be found on the bar to the right of the home page</p>
           </div>
       </div>
     </div>

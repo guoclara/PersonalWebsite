@@ -6,7 +6,7 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  background-color: black;
+  background-color: black
 }
 
 code {
@@ -22,6 +22,7 @@ code {
 #landingpg p{
   color: white;
   margin-top: 0;
+  
 }
 
 h1 {
@@ -43,7 +44,7 @@ h5 {
 .nav {
   align-items: center;
   transform-origin: 0 0;
-  transform: translate(100vw, 0) rotate(90deg);
+  transform: translate(98vw, 0) rotate(90deg);
   margin-top: 5vh;
   margin-right: 0;
   display:flex;
