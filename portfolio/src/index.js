@@ -459,10 +459,10 @@ function About(){
           </a>
         </div>
         <div className = "initials">
-          <img src={require('/Users/claraguo/PersonalWebsite/portfolio/src/initials.png')} alt="Logo"></img>
+          <img src={require('./initials.png')} alt="Logo"></img>
         </div>
         <div className="about_pg">
-          <img src= {require('/Users/claraguo/PersonalWebsite/portfolio/src/profile.png')} alt="Profile Photo"></img>
+          <img src= {require('./profile.png')} alt="Profile Photo"></img>
           <p>
             Hi! My name is Clara Guo. I'm a senior studying Applied Math-Computer Science at Brown Univeristy and am graduating in May 2023. I'm looking for an opportunity to start my professional career as a software engineer.
             <br></br>
