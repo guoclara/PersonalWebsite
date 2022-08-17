@@ -17,29 +17,30 @@ const ljpc_descr = "La Jolla Pharmaceutical Company develops and commercializes 
 const bwcs_descr = "Captain of Brown Women's Club Soccer. Coordinate with club and league managers; plan games, practices, and social events; manage budgeting and transportation. We play competitively against schools in the New England area.";
 const agss_descr = "All Girls STEM Society is a student run nonprofit that aims to empower young girls to pursue STEM through various free events (e.g. outreach, math tournaments) and workshops. In libraries across San Diego County, AGSS runs monthly workshops that involve speakers, original lectures, and hands-on activities. I created and taught circuitry and cellular biology workshops in addition to reviewing the development of other workshops and individually interacting and supporting participants.";
 const agss_nums = "Roughly 1000 participants across all events annually, with the All Girls Math Tournament garnering 100+ and STEAM Maker Festivals at the County Fair garnering around 200. In 2017-2018, girls from over 20 new schools participated, with half the workshops ran being brand-new curriculum.";
-const discovery_descr = "Software developer intern for Food Network Kitchen Services team at Discovery Inc. Completed tickets along with team in Agile framework. Spearheaded an Operational Excellence project to create a prototype automation workflow that created/updated Jira change management tickets tracking deploys. Helped migrate a legacy API to a new stack. Modified and created new endpoints that are now in production."
-const activity_names = ['Discovery Inc', 'FSAB', 'BWCS', 'STEMS', 'SD PRIDE', 'ACLU', 'LJPC', 'AGSS'];
+const discovery_descr = "Software developer intern for Food Network Kitchen Services team at Discovery Inc. Completed tickets along with team in Agile framework. Spearheaded an Operational Excellence project to create a prototype automation workflow that created/updated Jira change management tickets tracking deploys. Helped migrate a legacy API to a new stack. Modified and created new endpoints that are now in production.";
+const wbd_descr = "Software developer intern on the Discovery+ Roku team. Adapted components to have dynamic features rather than be defined through static styling and content rails to support mixed content types (e.g. show and page links). Implemented text to speech for my list and continue watching rails for screen readers. Built out a CI/CD testing framework that replicates a remote control by adding user journeys and adapting current journeys to updated feature UI. Automated cutting of release builds involving building, testing, uploading, versioning, and sending slack notifications of status upon completion using a github actions workflow."
+const activity_names = ['Warner Bros Discovery', 'Discovery Inc', 'FSAB', 'BWCS', 'STEMS', 'SD PRIDE', 'ACLU', 'LJPC', 'AGSS'];
 const activity_sub = [
-  'Software Developer Intern','Full Stack At Brown', "Brown Women's Club Soccer",
+  'Software Developer Intern','Software Developer Intern','Full Stack At Brown', "Brown Women's Club Soccer",
   'Swearer Tutoring Enrichment in Math and Science',
   'San Diego Pride', 'American Civil Liberties Union - Brown Chapter',
   'La Jolla Pharamceutical Company', 
   'All Girls STEM Society'
 ];
 const activity_dates = [
-  'June 2021- Aug 2021', 'Jan 2020 - Present', 'Sep 2019 - Present', 'Sep 2019 - Present',
+  'June 2022- Aug 2022','June 2021- Aug 2021', 'Jan 2020 - Present', 'Sep 2019 - Present', 'Sep 2019 - Present',
   'May 2020 - Aug 2020', 'Sep 2019 - Present', 'June 2018 - Aug 2018', 
   'Mar 2016 - Aug 2019'
 ];
 const activity_descr = [
-  discovery_descr, fsab_descr, bwcs_descr, stems_descr, 
+  wbd_descr, discovery_descr, fsab_descr, bwcs_descr, stems_descr, 
   pride_descr,
   aclu_descr, ljpc_descr, 
   agss_descr
 ];
-const activity_nums = [ '', '', '', pride_nums, '', '', '', agss_nums];
-const activity_links = ['', '', '', 'https://sdpride.org/' ,'https://www.facebook.com/brownaclu/posts/1418416088354923', '', 'https://www.allgirlsstemsociety.org/2018---2019-events.html', ''];
-const activity_linksdescr = ['', '', '', 'San Diego Pride' ,'Brown ACLU Infographic', '', '', 'Workshops from 2019'];
+const activity_nums = ['', '', '', '', pride_nums, '', '', '', agss_nums];
+const activity_links = ['', '', '', '', 'https://sdpride.org/' ,'https://www.facebook.com/brownaclu/posts/1418416088354923', '', 'https://www.allgirlsstemsociety.org/2018---2019-events.html', ''];
+const activity_linksdescr = ['', '', '', '', 'San Diego Pride' ,'Brown ACLU Infographic', '', '', 'Workshops from 2019'];
 
 const apma360 = "Described problems quantitatively as PDEs, discovered how seemingly unrelated contexts can result in similar equations; and developed methods for solution using analytical, numerical or qualitative methods. Contexts include first order equations; the second order wave equation and problems involving diffusion processes; steady state balances for systems in two or three dimensions; together with insights from theory."
 const apma1655= 'An integrated first course in mathematical statistics. Covered probability and statistics, integrated with its probabilistic foundation. Specific topics include probability spaces, discrete and continuous random variables, methods for parameter estimation, confidence intervals, and hypothesis testing.'
@@ -65,24 +66,23 @@ const images = [];
 const csa = "Static, responsive website created for Brown University's Chinese Students Association for desktop and mobile. Pages for displaying the e-board, events (past and upcoming), and directly emailing the org."
 const boc = "Full stack development for Brown University's Outing Club. Users with a brown.edu email are able to register/log in and enter lotteries for upcoming trips they want to go on using Auth0. Each user is weighted based on a variety of variables (e.g. if they won a trip slot prior, if they are a first timer, etc). There is an administrative page that allows authorized users to run lotteries; reset weights; and view, create, edit, and delete rows in the database tables. The lottery results are displayed in admin as well, and emails are sent out once results are calculated."
 const search = "Search engine comprised of an Indexer and Querier that processes thousands of XML files from Wikipedia. Calculates word document frequency, inverse document frequency, and page rank to process queries and quickly produce the top 10 most relevant results. The Indexer portion parses files, condenses files into essential terms, records links, and calculates relevant parameters. The Querier processes the query from the user and calculates the relvance score of each document and prints the 10 highest scoring documents if available. Users have the option to include page rank (i.e. the authority of pages, a technique pioneered by Google) in the score."
-const recommender = "Builds a decision tree from a provided dataset of objects in order to predict the value of an attribute from a new object not within the dataset (e.g. if a new applicant will be rejected or accepted for a position. New Object = Applicant. Hirability = Attribute). The user can select any attribute to look up a recommendation for."
-const connect4 = "Two player game of connect four played in terminal with customizable board dimensions. Option to choose the type of players playing: human player or AI player. The human player is a user interface that asks a real human which move to make. The AI player selects moves based on a game-tree search that looks at all possible game states n steps ahead, where n can be changed. It is assumed all players play with their best interest in mind."
 const rackette = "Interpreter that takes in a program written in Racket as a string and processes it in ML to produce results. It handles definitions, conditionals, logic, let expressions, procedure-application expressions, anonymous functions, and nesting. The interpreter is split into components that parse, evaluate, and converts the result back into a string."
 const hack = "3D version of the 2D website hosting the Hack at Home Hackathon run from Oct 9-12, 2020. I coded a large part of the user interaction. This includes highlighting clickable objects on hover, determining camera positioning for zooming, and making objects function as hyperlinks or urls for iframes. The website is meant as guide for participants to reference throughout the event and details the organization of the hackathon and its features. Designers created the 3D models used for the site."
 const shell = "Implementation of shell in C that displays a prompt and waits until the user types in a line of input. It then parses the input and take the appropriate action. For example, some input is passed on to built-in shell commands, while other inputs specify file redirections and external programs to be executed by the shell."
-const cnn = "Implementation of a convolutional neural network to classify cats and dogs from images in the CIFAR10 dataset with an accuracy of 0.74894744 using both the Tensorflow API and my own implementation of conv2d that manually calculates the padding and convolution calculations given inputs, strides, filters, and padding type."
+const sound_of_music = "Created 3 models, each testing a different interpretability technique, that classified songs by their music genres. The data fed into the CNNs were wav files converted into log mel spectrogram images. The activation maps were converted back into wav files so we could 'hear' what the CNN identified as the sounds specific to a genre."
 const equilibria = "Full stack web application for users to fairly delegate tasks to other users using linear programming. Users can create events that have a list of tasks and invite other users to input their willingness on a scale of 0-10 to do each task. Once invited to an event, the event will show up on each user's page. Once all users submit their willingness, the creator can click a button to run task assignment and view the results."
+const style_transfer = "Implemented 2 different style transfer networks based off 2 academic papers: 'A Neural Algorithm of Artistic Style' and 'Arbitrary Style Transfer in Real-Time with Adaptive Instance Normalization.' Both models calculate a style loss and content loss to maximize both style and content retention to produce an image witht the content of one and style of the other."
 
-const proj_names = ['Hack at Home 3D Website', 'Brown Outing Club Weighted Lottery System', 'Equilibria', 'Brown Chinese Students Association Website', 'Shell', 'Convolutional Neural Network', 'Search', 'Recommender', 'Connect Four', 'Rackette'];
-const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Intro To Software Engineering, Final Project', 'Full Stack at Brown', 'Introduction to Computer Systems', 'Deep Learning', 'CSCI0180', 'CSCI0180', 'CSCI0170', 'CSCI0170'];
-const proj_descr = [hack, boc, equilibria, csa, shell, cnn, search, recommender, connect4, rackette];
-const proj_link = ['https://hackathome.org/home.html', 'https://boc.app.fullstackatbrown.com/','', 'https://github.com/FullStackAtBrownTeam/CSA-Website', '', '', '', '', '', ''];
-const proj_link2 = ['https://blog.cs.brown.edu/2020/11/04/full-stack-browns-first-hackathon-datathon-and-ctf-hackhome/', '', '', '', '', '', '', '', '', ''];
-const proj_link2_name = ['Brown CS Dept blog post with more info', '', '', '', '', '', '', '', '', ''];
+const proj_names = ['Hack at Home 3D Website', 'Brown Outing Club Weighted Lottery System', 'Equilibria', 'Style Transfer', 'Sound of Music: Interpretive CNN', 'Brown Chinese Students Association Website', 'Shell', 'Search', 'Rackette'];
+const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Intro To Software Engineering, Final Project', 'Computer Vision, Final Project', 'Deep Learning, Final Project', 'Full Stack at Brown', 'Introduction to Computer Systems', 'CSCI0180', 'CSCI0170'];
+const proj_descr = [hack, boc, equilibria, style_transfer, sound_of_music, csa, shell, search, rackette];
+const proj_link = ['https://fullstackatbrown.github.io/hack-at-home/home.html', 'https://github.com/guoclara/project-brown-outing-club','','https://github.com/guoclara/cv-style-transfer', 'https://github.com/guoclara/the-sound-of-music', 'https://github.com/guoclara/project-csa-website', '', '', ''];
+const proj_link2 = ['https://blog.cs.brown.edu/2020/11/04/full-stack-browns-first-hackathon-datathon-and-ctf-hackhome/', '', '','', '', '', '', '', ''];
+const proj_link2_name = ['Brown CS Dept blog post with more info', '', '', '', '', '', '', '', ''];
 
-const proj_team = ['Johnny Roy, Trevor Lowe, Yilan Sun','Anna Zhao, Lucas Gelfond, Ethan Asis', 'Johnny Ren, Anna Zhao, Aaron Wang', 'Trevor Ing, Casey Kim', 'n/a', 'n/a', 'Carolyn Zech', 'Sean Zhan', 'David Doan', 'Milan Samardziski'];
-const proj_time = ['Summer 2020', '2020-2021', 'March 2020','October 2020', 'September 2020', 'Febuary 2020', 'December 2019', 'November 2019', 'October 2019'];
-const proj_lang = ['HTML, CSS, JavaScript (ThreeJS)', 'Java, Javascript (ReactJS)', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'HTML, CSS, JavaScript', 'C', 'Python', 'Scala', 'Java', 'ML', 'ML'];
+const proj_team = ['Johnny Roy, Trevor Lowe, Yilan Sun','Anna Zhao, Lucas Gelfond, Ethan Asis', 'Johnny Ren, Anna Zhao, Aaron Wang', 'Sean Zhan, Hannah Hiraki, Austin DeStefanis', 'David Moon, Johnny Ren', 'Trevor Ing, Casey Kim', 'n/a', 'Carolyn Zech', 'Milan Samardziski'];
+const proj_time = ['Summer 2020', '2020-2021', 'March 2020', 'March 2020', 'December 2020','October 2020', 'September 2020', 'February 2020', 'October 2019'];
+const proj_lang = ['HTML, CSS, JavaScript (ThreeJS)', 'Java, Javascript (ReactJS)', 'Python (Flask), SQL, HTML (Jinja2), CSS', 'Python', 'Python', 'HTML, CSS, JavaScript', 'C', 'Scala', 'ML'];
 Aos.init({duration: 1500});
 class Activity extends React.Component{
   render() {
@@ -376,7 +376,7 @@ class ProjPage extends React.Component {
 function Resume() {
   return(
     <div className = "rotate">
-      <a href="https://docs.google.com/document/d/1sBqczH-XryGVgLevCrH_9nN1m0L26PAm2h6pR3OkKds/edit?usp=sharing" id='resume'>
+      <a href="https://docs.google.com/document/d/1KhPbLLiRR5HEbkvn7Tt-W_UsvwNp0U06kBfToMZj1I8/edit?usp=sharing" target="_blank" id='resume'>
       Resume
       </a>
     </div>
