@@ -467,7 +467,7 @@ function About(){
             Hi! My name is Clara Guo. I'm a senior studying Applied Math-Computer Science at Brown Univeristy and am graduating in May 2023. I'm looking for an opportunity to start my professional career as a software engineer.
             <br></br>
             <br></br>
-            I am passionate about creating technology that touches a wide audience and gives make their lives better in some way, whether that's through providing entertainment through streaming or through helping local communities with their tech needs.
+            I am passionate about creating technology that touches a wide audience and makes their lives better in some way, whether that's through providing entertainment through streaming or through helping local communities with their tech needs.
             <br></br>
             <br></br> 
             Take a look at the rest of the website, and please contact me if you have any questions!
