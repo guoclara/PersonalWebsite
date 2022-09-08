@@ -14,51 +14,53 @@ const pride_descr = "San Diego Pride is a nonprofit that aims to foster pride, e
 const pride_nums = "Raised $56,454 for a $50,000 goal. Pride week streaming live segments reached 333,414 people, and 265,624 watched Pride Live (the stream in place of the parade and festival). The earned media hit 10.6 million people from the week.";
 const aclu_descr = "ACLU's Brown University Chapter seeks to raise awareness around civil liberties issues. Each semester, new working groups dedicated to various civil issues are created. I was a part of the Immigrants' Rights Working Group and we sought to clarify the financial aid and college application process for undocumented/DACA students. I designed a page long infographic representing the culmination of research and interviews of relevant university staff. I also created the new branding for all Brown ACLU social media and am currently designing their website layout."
 const ljpc_descr = "La Jolla Pharmaceutical Company develops and commercializes innovative therapies that improve outcomes in patients suffering from life-threatening diseases. In December 2017, GIAPREZA™ (angiotensin II) was approved by the U.S. Food and Drug Administration (FDA) to treat adults with septic or other distributive shock. Using R Studio and Excel, I extractred, organized, merged, and analyzed pharmacokinetic/pharmacodynamic data from clinical trials for toxicology reports. I charted macrophage levels in the blood at different dosages and times to help determine efficacy of drugs in development. I then presented and explained the graphs in internal meetings";
-const bwcs_descr = "Captain of Brown Women's Club Soccer. Coordinate with club and league managers; plan games, practices, and social events; manage budgeting and transportation. We play competitively against schools in the New England area.";
+const bwcs_descr = "Captain of Brown Women's Club Soccer. Coordinate with club and league managers; plan games, practices, and social events; manage budgeting and transportation. We play competitively against schools in the New England area. Raised $10,000 last year and helped kick start the inaugural Ivy League spring tournament for women's club soccer.";
 const agss_descr = "All Girls STEM Society is a student run nonprofit that aims to empower young girls to pursue STEM through various free events (e.g. outreach, math tournaments) and workshops. In libraries across San Diego County, AGSS runs monthly workshops that involve speakers, original lectures, and hands-on activities. I created and taught circuitry and cellular biology workshops in addition to reviewing the development of other workshops and individually interacting and supporting participants.";
 const agss_nums = "Roughly 1000 participants across all events annually, with the All Girls Math Tournament garnering 100+ and STEAM Maker Festivals at the County Fair garnering around 200. In 2017-2018, girls from over 20 new schools participated, with half the workshops ran being brand-new curriculum.";
-const discovery_descr = "Software developer intern for Food Network Kitchen Services team at Discovery Inc. Completed tickets along with team in Agile framework. Spearheaded an Operational Excellence project to create a prototype automation workflow that created/updated Jira change management tickets tracking deploys. Helped migrate a legacy API to a new stack. Modified and created new endpoints that are now in production."
-const activity_names = ['Discovery Inc', 'FSAB', 'BWCS', 'STEMS', 'SD PRIDE', 'ACLU', 'LJPC', 'AGSS'];
+const discovery_descr = "Software developer intern for Food Network Kitchen Services team at Discovery Inc. Completed tickets along with team in Agile framework. Spearheaded an Operational Excellence project to create a prototype automation workflow that created/updated Jira change management tickets tracking deploys. Helped migrate a legacy API to a new stack. Modified and created new endpoints that are now in production.";
+const wbd_descr = "Software developer intern on the Discovery+ Roku team. Adapted components to have dynamic features rather than be defined through static styling and content rails to support mixed content types (e.g. show and page links). Implemented text to speech for my list and continue watching rails for screen readers. Built out a CI/CD testing framework that replicates a remote control by adding user journeys and adapting current journeys to updated feature UI. Automated cutting of release builds involving building, testing, uploading, versioning, and sending slack notifications of status upon completion using a github actions workflow."
+const activity_names = ['Warner Bros Discovery', 'Discovery Inc', 'FSAB', 'BWCS', 'STEMS', 'SD PRIDE', 'ACLU', 'LJPC', 'AGSS'];
 const activity_sub = [
-  'Software Developer Intern','Full Stack At Brown', "Brown Women's Club Soccer",
+  'Software Developer Intern','Software Developer Intern','Full Stack At Brown', "Brown Women's Club Soccer",
   'Swearer Tutoring Enrichment in Math and Science',
   'San Diego Pride', 'American Civil Liberties Union - Brown Chapter',
   'La Jolla Pharamceutical Company', 
   'All Girls STEM Society'
 ];
 const activity_dates = [
-  'June 2021- Aug 2021', 'Jan 2020 - Present', 'Sep 2019 - Present', 'Sep 2019 - Present',
+  'June 2022- Aug 2022','June 2021- Aug 2021', 'Jan 2020 - Present', 'Sep 2019 - Present', 'Sep 2019 - Present',
   'May 2020 - Aug 2020', 'Sep 2019 - Present', 'June 2018 - Aug 2018', 
   'Mar 2016 - Aug 2019'
 ];
 const activity_descr = [
-  discovery_descr, fsab_descr, bwcs_descr, stems_descr, 
+  wbd_descr, discovery_descr, fsab_descr, bwcs_descr, stems_descr, 
   pride_descr,
   aclu_descr, ljpc_descr, 
   agss_descr
 ];
-const activity_nums = [ '', '', '', pride_nums, '', '', '', agss_nums];
-const activity_links = ['', '', '', 'https://sdpride.org/' ,'https://www.facebook.com/brownaclu/posts/1418416088354923', '', 'https://www.allgirlsstemsociety.org/2018---2019-events.html', ''];
-const activity_linksdescr = ['', '', '', 'San Diego Pride' ,'Brown ACLU Infographic', '', '', 'Workshops from 2019'];
+const activity_nums = ['', '', '', '', '', pride_nums, '', '', agss_nums];
+const activity_links = ['', '', '', '', '', 'https://sdpride.org/' ,'https://www.facebook.com/brownaclu/posts/1418416088354923', 'https://www.allgirlsstemsociety.org/2018---2019-events.html', ''];
+const activity_linksdescr = ['', '', '', '', '', 'San Diego Pride' ,'Brown ACLU Infographic', '', 'Workshops from 2019'];
 
-const apma360 = "Described problems quantitatively as PDEs, discovered how seemingly unrelated contexts can result in similar equations; and developed methods for solution using analytical, numerical or qualitative methods. Contexts include first order equations; the second order wave equation and problems involving diffusion processes; steady state balances for systems in two or three dimensions; together with insights from theory."
-const apma1655= 'An integrated first course in mathematical statistics. Covered probability and statistics, integrated with its probabilistic foundation. Specific topics include probability spaces, discrete and continuous random variables, methods for parameter estimation, confidence intervals, and hypothesis testing.'
-const cs17 = "Teaches functional programming paradigm through the languages Racket and ML. All of the following fundamental computer science techniques are integrated into the course material: algorithms, data structures, analysis, problem solving, abstract reasoning, and collaboration. Concrete examples are drawn from different subareas of computer science: arbitrary-precision arithmetic, natural language processing, databases, and strategic games."
-const cs18 = "A continuation of CSCI 0170. Learned to program in Java while continuing to develop algorithmic and analytic skills. Emphasis is placed on object-oriented design, imperative programming, and the implementation and use of data structures. Examples are drawn from such areas as databases, strategy games, web programming, graphical user interfaces, route finding, and data compression. Lab work done with the assistance of TAs."
-const apma350 ="Comprehensive introduction to ordinary differential equations and their applications. Demonstrated how applied mathematicians use ordinary differential equations to solve practical applications, from understanding the underlying problem, creating a differential-equations model, solving the model using analytical, numerical, or qualitative methods, and interpreting the findings in terms of the original problem. We will also learn about the underlying rigorous theoretical foundations of differential equations."
-const dl = "Deep learning, plus the specialized techniques that it has inspired (e.g. convolutional features and word embeddings) have lead to rapid improvements in many applications such as computer vision, machine translation, and computer Go. Coursework includes creating different neural networks (e.g. convolutional, recurrent, n-gram) for image and natural language processing using Numpy and Tensorflow (The primary API for Tensorflow is from Python)."
-const cs33 = "High-level computer architecture and systems programming. The course covers the organization of computer systems (in terms of storage units, caches, processors, and I/O controllers) and teaches students assembly-language programming and C-language programming. Extensive programming exercises introduce students to systems-level programming on Unix systems, as well as to multi-threaded programming with POSIX threads."
-const apma1200 = "Basic probabilistic problems and methods in operations research and management science. Methods of problem formulation and solution. Markov chains, birth-death processes, stochastic service and queueing systems, the theory of sequential decisions under uncertainty, dynamic programming."
+const apma360 = "Described diverse problems as PDEs and developed solutions using analytical, numerical or qualitative methods. Topics include first order equations, the wave equation and diffusion processes, and steady state balances for systems in two or three dimensions."
+const apma1860= 'Selected topics about the mathematics of graphs with an emphasis on random graph models, the dynamics of processes operating on these graphs (percolation, cascades, epidemics, queuing, synchronization), and their application to biological, social, and technological networks.'
+// const cs17 = "Teaches functional programming paradigm. All of the following fundamental computer science techniques are integrated into the course material: algorithms, data structures, analysis, problem solving, abstract reasoning, and collaboration."
+// const cs18 = "A continuation of Intro I. Learned to program in Java while continuing to develop algorithmic and analytic skills. Emphasis is placed on object-oriented design and data structures."
+const apma1690 ="Examination of probability theory and mathematical statistics from the perspective of computing. Topics include random number generation, Monte Carlo methods, importance sampling, Bayesian networks, dimensionality reduction. Homework done in MATLAB."
+const dl = "Deep learning course plus the specialized techniques that it has inspired (e.g. convolutional features and word embeddings). Coursework includes creating different neural networks (e.g. convolutional, recurrent, n-gram) for image and natural language processing using Numpy and Tensorflow, reinforcement learning, and GANs."
+const cs33 = "The course covers the organization of computer systems, assembly-language programming, and C-language programming. Extensive programming exercises cover systems-level programming on Unix systems, as well as to multi-threaded programming with POSIX threads."
+const apma1200 = "Basic probabilistic problems and methods in operations research and management science. Markov chains, birth-death processes, stochastic service and queueing systems, the theory of sequential decisions under uncertainty, and dynamic programming."
 const apma1210 = "An introduction to the basic mathematical ideas and computational methods of optimizing allocation of effort or resources, with or without constraints. Linear programming, network models, dynamic programming, and integer programming."
-const cs32 = "Techniques for designing, building, and maintaining large, scalable, and reusable systems using Java and Javascript. Focus on software testing, relational databases, concurrency techniques such as threads, and software engineering tools like git, profilers, and debuggers. A major component of the course was a group software project of your own design."
-const cv = "This course treats vision as inference from noisy and uncertain data and emphasizes probabilistic and statistical approaches. Topics may include perception of 3D scene structure from stereo, motion, and shading; segmentation and grouping; texture analysis; learning, object recognition; tracking and motion estimation."
+const cs32 = "Techniques for designing and building scalable, extensible systems using Java and Javascript. Focus on software testing, relational databases, and concurrency techniques. A major component of the course was a group software project of your own design."
+const cv = "This course treats vision as inference from noisy and uncertain data and emphasizes probabilistic and statistical approaches. Topics include object recognition, 3D reconstruction, feature recognition, and deep learning."
+const cssc = "Half the course is iteratively designing, building, and testing technical projects in partnership with different local social change organizations. Half seminar on examining the positionality and ethics of engaging in social impact work and what it practically means to leverage technology to create social change on an everyday basis."
 const course_names = [
-  'Introduction To Software Engineering', 'Applied Partial Differential Equations I', 'Applied Ordinary Differential Equations','Statistical Inference I', 
+  'CS For Social Change', 'Introduction To Software Engineering', 'Computational Probability and Statistics','Graphs and Networks', 
   'Deep Learning', 'Computer Vision', 'Introduction to Computer Systems', 'Operations Research: Deterministic Models', 'Operations Research: Probabilistic Models', 
-  'Computer Science: An Integrated Introduction (CS0170)', 'Computer Science: An Integrated Introduction (CS0180)'
+  'Applied Partial Differential Equations I'
 ];
-const course_grades = ["A","A", "A", "A", "A", "A", "A", "A", "A", "A", "A"];
-const course_descr = [cs32, apma360, apma350, apma1655, dl, cv, cs33, apma1210, apma1200, cs17, cs18];
+const course_grades = ["A","A","A", "A", "A", "A", "A", "A", "A", "A"];
+const course_descr = [cssc, cs32, apma1690, apma1860, dl, cv, cs33, apma1210, apma1200, apma360];
 
 const images = [];
 
@@ -74,9 +76,9 @@ const cnn = "Implementation of a convolutional neural network to classify cats a
 const equilibria = "Full stack web application for users to fairly delegate tasks to other users using linear programming. Users can create events that have a list of tasks and invite other users to input their willingness on a scale of 0-10 to do each task. Once invited to an event, the event will show up on each user's page. Once all users submit their willingness, the creator can click a button to run task assignment and view the results."
 
 const proj_names = ['Hack at Home 3D Website', 'Brown Outing Club Weighted Lottery System', 'Equilibria', 'Brown Chinese Students Association Website', 'Shell', 'Convolutional Neural Network', 'Search', 'Recommender', 'Connect Four', 'Rackette'];
-const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Intro To Software Engineering, Final Project', 'Full Stack at Brown', 'Introduction to Computer Systems', 'Deep Learning', 'CSCI0180', 'CSCI0180', 'CSCI0170', 'CSCI0170'];
+const proj_org = ['Full Stack at Brown', 'Full Stack at Brown', 'Intro To Software Engineering, Final Project', 'Full Stack at Brown', 'Introduction to Computer Systems', 'Deep Learning', 'CS Intro II', 'CS Intro II', 'CS Intro I', 'CS Intro I'];
 const proj_descr = [hack, boc, equilibria, csa, shell, cnn, search, recommender, connect4, rackette];
-const proj_link = ['https://hackathome.org/home.html', 'https://boc.app.fullstackatbrown.com/','', 'https://github.com/FullStackAtBrownTeam/CSA-Website', '', '', '', '', '', ''];
+const proj_link = ['https://fullstackatbrown.github.io/hack-at-home/home.html', '','', 'https://github.com/fullstackatbrown/project-csa-website', '', '', '', '', '', ''];
 const proj_link2 = ['https://blog.cs.brown.edu/2020/11/04/full-stack-browns-first-hackathon-datathon-and-ctf-hackhome/', '', '', '', '', '', '', '', '', ''];
 const proj_link2_name = ['Brown CS Dept blog post with more info', '', '', '', '', '', '', '', '', ''];
 
@@ -376,7 +378,7 @@ class ProjPage extends React.Component {
 function Resume() {
   return(
     <div className = "rotate">
-      <a href="https://docs.google.com/document/d/1sBqczH-XryGVgLevCrH_9nN1m0L26PAm2h6pR3OkKds/edit?usp=sharing" id='resume'>
+      <a href="https://docs.google.com/document/d/1KhPbLLiRR5HEbkvn7Tt-W_UsvwNp0U06kBfToMZj1I8/edit?usp=sharing" id='resume' target='_blank'>
       Resume
       </a>
     </div>
@@ -445,7 +447,7 @@ function About(){
           <a href = "#proj">PROJECTS</a>
           <a href = "#res">CONTACT/RESUME</a>
               
-          <a href="#res" target="_blank">
+          <a href="#res">
             <i className="fa fa-envelope" aria-hidden="true" ></i>
           </a>
           <a href="https://www.linkedin.com/in/claraguo" target="_blank">
